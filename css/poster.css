@@ -1,0 +1,321 @@
+/*embedded fonts*/
+
+@font-face {
+font-family: display;
+src:url(../fonts/hookedup.ttf); }
+
+@font-face {
+font-family: body;
+src:url(../fonts/seravek.ttc); }
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: #d8d1c4;
+}
+
+/* every ID (card) has a #. Every (high school) class has a period (.) */
+
+#container {
+	width: 1100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -550px;
+}
+#photo1 {
+	width: 600px;
+	position: absolute;
+	left: 100px;
+	top: 300px;
+	z-index:2;
+}
+#photo2 {
+	width: 500px;
+	position: absolute;
+	left: 470px;
+	top: 100px;
+	opacity: .3;
+}
+#map1 {
+	width: 700px;
+	position: absolute;
+	left: 470px;
+	top: 15px;
+}
+.title {
+	font-family: display;
+	font-size: 5em;
+	color: #8a8170;
+	position: absolute;
+	top: 250px;
+	left: 200px;
+	z-index:3;
+}
+@keyframes debt_move {
+	0% {top:250px; left: 50px;}
+	50% { top:450px; left: 50px;}
+	100% {top: 450px; left: 710px;}
+}
+.debt{
+	font-family: display;
+	font-size: 5em;
+	color: #e8595f;
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	z-index:3;
+	animation: debt_move 8s linear;
+	animation-fill-mode: forwards;
+	animation-delay:1.5s;
+}
+.titletop {
+	font-family: display;
+	font-size: 5em;
+	color: #8a8170;
+	position: absolute;
+	top: 170px;
+	left: 0px;
+}
+
+.subtitle {
+	font-family: display;
+	font-size: 4em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 530px;
+	left: 710px;
+}
+
+@keyframes depl_move {
+	0% {top:470px; left: 710px;}
+	100% { top:470px; left: 1400px;}
+}
+.subtitletop{
+	font-family: display;
+	font-size: 4em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 470px;
+	left: 710px;
+	animation: depl_move 1s linear;
+	animation-delay: 8.75s;
+	animation-fill-mode: forwards;
+}
+#photo3{
+	width: 820px;
+	position: absolute;
+	left: 200px;
+	top: 850px;
+}
+@keyframes drop_move {
+	0% {top:730px; left: 150px; width: 200px;}
+	100% { top:930px; left: 150px;}
+}
+#drop1{
+	width:320px;
+	position: absolute;
+	left: 150px;
+	top: 730px;
+	opacity: .85;
+	animation: drop_move 8s infinite alternate linear;
+}
+@keyframes drop2_move {
+	0% {top:930px; left: 555px; width: 200px;}
+	100% { top:1130px; left: 555px;}
+}
+#drop2{
+	width:320px;
+	position:absolute;
+	left:555px;
+	top: 930px;
+	opacity: .85;
+	animation: drop2_move 8s infinite alternate linear;
+}
+.fact1{
+	width:35%;
+	font-family: body;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #8a8170;
+	position: absolute;
+	top: 880px;
+	left: 0px;
+}
+.fact2{
+	width: 35%;
+	font-family: body;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 1200px;
+	left: 600px;
+}
+.fact3 {
+	width: 35%;
+	font-family: body;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 1400px;
+	left: 600px;
+}
+.date1 {
+	font-family: display;
+	font-size: 7.5em;
+	color: #8a8170;
+	position: absolute;
+	top: 950px;
+	left: 170px;
+}
+
+.date2{
+	font-family: display;
+	font-size: 7.5em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 1170px;
+	left:595px;
+}
+
+#photo4{
+	width: 400px;
+	position: absolute;
+	left: 120px;
+	top: 1600px;
+}
+
+.water{
+	font-family: display;
+	font-size: 8.5em;
+	color: #a3b0b0;
+	
+}
+@keyframes w_move {
+	0% {top:1500px; left: 645px;}
+	100% { top:1450px; left: 645px;}
+}
+#w {
+	position: absolute;
+	top: 1500px;
+	left: 645px;
+	animation: w_move 1s infinite alternate linear;
+}
+@keyframes a_move {
+	0% {top:1500px; left: 735px;}
+	100% { top:1420px; left: 735px;}
+}
+#a{
+	position: absolute;
+	top: 1500px;
+	left: 735px;
+	animation: a_move 1s infinite alternate linear;
+	animation-delay: .25s;
+}
+@keyframes t_move {
+	0% {top:1500px; left: 810px;}
+	100% { top:1420px; left: 810px;}
+}
+#t{
+	position: absolute;
+	top: 1500px;
+	left: 810px;
+	animation: t_move 1s infinite alternate linear;
+	animation-delay: .5s;
+}
+@keyframes e_move {
+	0% {top:1500px; left: 860px;}
+	100% { top:1420px; left: 860px;}
+}
+#e{
+	position: absolute;
+	top: 1500px;
+	left: 860px;
+	animation: e_move 1s infinite alternate linear;
+	animation-delay: .75s;
+}
+@keyframes r_move {
+	0% {top:1500px; left: 930px;}
+	100% { top:1420px; left: 930px;}
+}
+#r{
+	position: absolute;
+	top: 1500px;
+	left: 930px;
+	animation: r_move 1s infinite alternate linear;
+	animation-delay: 1s;
+}
+.fact4{
+	width: 35%;
+	font-family: body;
+	font-style: italic;
+	font-size: 1.75em;
+	color: #8a8170;
+	position: absolute;
+	top: 1720px;
+	left: 650px;
+}
+.fact5{
+	font-family: body;
+	font-style: italic;
+	font-size: 1.25em;
+	color: #8a8170;
+	position: absolute;
+	top: 1820px;
+	left: 0px;
+}
+.fact6{
+	font-family: body;
+	font-style: italic;
+	font-size: 1.25em;
+	color: #a3b0b0;
+	position: absolute;
+	top: 1950px;
+	left: 0px;
+}
+.fact5title{
+	font-family: display;
+	font-size: 1.5em;
+	color: #e8595f;
+	position: absolute;
+	top: 1790px;
+	left: 0px;
+}
+.fact6title{
+	font-family: display;
+	font-size: 1.5em;
+	color: #e8595f;
+	position: absolute;
+	top: 1920px;
+	left: 0px;
+}
+
+#wave1{
+	width: 650px;
+	position: absolute;
+	left: 600px;
+	top: 1600px;
+	z-index:2;
+}
+
+.color {
+	width: 0px;
+	height: 60px;
+	background: #a3b0b0;
+	position: absolute;
+	top: 1900px;
+	left: 620px; 
+	z-index: 1;
+	animation: wipe 7s infinite;
+}
+
+@keyframes wipe {
+	0%, 100% { width: 0px; }
+	50% { width: 550px; }
+}
+
+
+
+
+
